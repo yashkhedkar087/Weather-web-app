@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    /* CSS styles for the contact form */
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #d0262681;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* CSS styles for the contact buttons */
+    .contact-buttons {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .contact-buttons a {
+      display: inline-block;
+      margin: 0 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #4CAF50;
+      overflow: hidden;
+    }
+
+    .contact-buttons a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <p>If you have any questions or feedback about the weather app, please feel free to contact us at <a href="mailto:contact@weatherapp.com">contact@weatherapp.com</a>.</p>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="submit_contact_form.php" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+      <button type="button" onclick="window.location.href='index.html'">BACK</button>
+    </form>
+  </div>
+  
+  <!-- Contact buttons -->
+ 
+</body>
+</html>
